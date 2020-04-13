@@ -17,7 +17,10 @@ import {
 class Login extends Component{
     constructor(props){
         super(props)
+        this.login = this.login.bind(this)
+        this.handleChange = this.handleChange.bind(this)
         this.state = {
+
             email: "",
             password: ""
         }
@@ -31,6 +34,13 @@ class Login extends Component{
             console.log(u)
         }).catch((err) => {
             console.log(err)
+        })
+    }
+
+    handleChange(e){
+
+        this.setState({
+            [e.target.name] : e.target.value
         })
     }
 
@@ -57,6 +67,8 @@ class Login extends Component{
                 id="defaultFormEmailEx"
                 className="form-control"
                 value={this.state.email}
+                onChange={this.handleChange}
+                name="email"
               />
               <label
                 htmlFor="defaultFormPasswordEx"
@@ -69,9 +81,11 @@ class Login extends Component{
                 id="defaultFormPasswordEx"
                 className="form-control"
                 value={this.state.password}
+                onChange={this.handleChange}
+                name="password"
               />
               <div className="text-center mt-4">
-                <MDBBtn color="light-blue" className="mb-3" type="submit">
+                <MDBBtn color="light-blue" className="mb-3" type="submit" onClick={this.login}>
                   Login
                 </MDBBtn>
               </div>
