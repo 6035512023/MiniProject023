@@ -19,6 +19,7 @@ class Login extends Component{
         super(props)
         this.login = this.login.bind(this)
         this.handleChange = this.handleChange.bind(this)
+        this.signup = this.signup.bind(this)
         this.state = {
 
             email: "",
@@ -42,6 +43,18 @@ class Login extends Component{
         this.setState({
             [e.target.name] : e.target.value
         })
+    }
+
+    signup(e){
+
+        e.preventDefault()
+        fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
+
+            console.log(u)
+        }).catch((err) => {
+            console.log(err)
+        })
+
     }
 
     render(){
@@ -87,6 +100,9 @@ class Login extends Component{
               <div className="text-center mt-4">
                 <MDBBtn color="light-blue" className="mb-3" type="submit" onClick={this.login}>
                   Login
+                </MDBBtn>
+                <MDBBtn color="light-blue" className="mb-3" type="submit" onClick={this.signup}>
+                  Signup
                 </MDBBtn>
               </div>
               <MDBModalFooter>
