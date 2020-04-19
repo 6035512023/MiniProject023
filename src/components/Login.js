@@ -3,6 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import fire from "../config/fire";
+import './Login.css';
 import {
   MDBContainer,
   MDBRow,
@@ -59,13 +60,14 @@ class Login extends Component{
 
     render(){
   return (
-    <MDBContainer>
+    <div className="box">
+    <MDBContainer style={{display: 'flex' , justifyContent: 'center'}}>
       <MDBRow>
-        <MDBCol md="6">
+        <MDBCol md="50">
           <MDBCard>
             <MDBCardBody>
               <MDBCardHeader className="form-header deep-blue-gradient rounded">
-                <h3 className="my-3">
+                <h3 className="my-12">
                   <MDBIcon icon="lock" /> Login:
                 </h3>
               </MDBCardHeader>
@@ -106,7 +108,7 @@ class Login extends Component{
                 </MDBBtn>
               </div>
               <MDBModalFooter>
-                <div className="font-weight-light">
+                <div className="font-weight-light" display="flex"  align-items="center" >
                   <p>Not a member? Sign Up</p>
                   <p>Forgot Password?</p>
                 </div>
@@ -116,6 +118,7 @@ class Login extends Component{
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+    </div>
   );
 };
 }

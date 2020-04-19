@@ -5,8 +5,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import fire from './config/fire';
-
-import VideoBackgroundPage from './components/VideoBackgroundPage';
+// import VideoBackgroundPage from './components/VideoBackgroundPage';
+import Home from './components/Home';
 // import './index.css'
 
 class App extends Component{
@@ -48,7 +48,7 @@ class App extends Component{
     
     return(
       <div>
-        <VideoBackgroundPage/>
+        <Home/>
       </div>
     )
 

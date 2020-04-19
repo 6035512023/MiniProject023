@@ -1,20 +1,25 @@
 import React from 'react'
-import fire from '../config/fire'
+ import fire from '../config/fire'
+ import Topbar from './Topbar';
+import './Home.css';
 
 const Home = () => {
 
-    const logout = () => {
+     const logout = () => {
 
-        fire.auth().signOut();
-    }
+         fire.auth().signOut();
+     }
 
 
     return(
-        <div>
-            Home Page
-            <div><button onClick={logout}>LOGOUT</button></div>
-            
+         <div>
+             <Topbar/>
+             <div className="bg">
+
+            </div>
         </div>
+
+        
     )
 }
 
