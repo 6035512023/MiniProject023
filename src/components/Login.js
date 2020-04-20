@@ -4,6 +4,8 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import fire from "../config/fire";
 import './Login.css';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
+import firebase from 'firebase'
 import {
   MDBContainer,
   MDBRow,
@@ -24,9 +26,36 @@ class Login extends Component{
         this.state = {
 
             email: "",
-            password: ""
+            password: "",
+            isSignedIn: false
+
         }
     }
+    
+  uiConfig = {
+
+  signInFlow: "popup",
+  signInOptions: [
+
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+      firebase.auth.GithubAuthProvider.PROVIDER_ID
+  ],
+
+  callback: {
+
+      signInSuccess: () => false
+  }
+}
+
+ componentDidMount () {
+
+
+
+  firebase.auth().onAuthStateChanged(user => {
+      this.setState({ isSignedIn: !!user })
+  })
+}
 
     login(e) {
 
@@ -60,12 +89,13 @@ class Login extends Component{
 
     render(){
   return (
-    <div className="box">
+    <div className="back">
+        <div className="box">
     <MDBContainer style={{display: 'flex' , justifyContent: 'center'}}>
       <MDBRow>
         <MDBCol md="50">
           <MDBCard>
-            <MDBCardBody>
+            <MDBCardBody className="body black rounded">
               <MDBCardHeader className="form-header deep-blue-gradient rounded">
                 <h3 className="my-12">
                   <MDBIcon icon="lock" /> Login:
@@ -107,18 +137,18 @@ class Login extends Component{
                   Signup
                 </MDBBtn>
               </div>
-              <MDBModalFooter>
-                <div className="font-weight-light" display="flex"  align-items="center" >
-                  <p>Not a member? Sign Up</p>
-                  <p>Forgot Password?</p>
-                </div>
-              </MDBModalFooter>
+              <StyledFirebaseAuth
+                                    uiConfig={this.uiConfig}
+                                    firebaseAuth={firebase.auth()}
+                                />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
     </div>
+    </div>
+    
   );
 };
 }

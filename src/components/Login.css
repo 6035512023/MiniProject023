@@ -1,6 +1,21 @@
+.back{
+    background-image: url("https://s3.envato.com/files/251317333/cr2000200_YE_shopping%20trolley%20on%20yellow%20background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .box {
-
 display: flex;
+width: 100%;
+height: 100vh;
+background: none;
 justify-content: center;
-margin-top: 250px;
+align-items: center;
+}
+
+.foot{
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
 }

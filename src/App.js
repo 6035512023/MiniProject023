@@ -5,8 +5,15 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import fire from './config/fire';
+import { BrowserRouter, Route, Link, Router, Redirect } from 'react-router-dom';
 // import VideoBackgroundPage from './components/VideoBackgroundPage';
 import Home from './components/Home';
+// import { Route } from 'react-router-dom';
+import Topbar from './components/Topbar';
+import Contact from './components/Contact';
+import FormInput from './components/FormInput';
+import { ListItem } from '@material-ui/core';
+import ListItems from './components/ListItems'
 // import './index.css'
 
 class App extends Component{
@@ -37,21 +44,28 @@ class App extends Component{
   }
 
   render(){
-    if(this.state.user == null){
-
-    return(
-      <div>
-        <Login />
-      </div>
-    )
+    if(this.state.user == null) {
+      return (
+        <div>
+          <Topbar />
+          <Login />
+        </div>
+      )
     }
-    
+
     return(
       <div>
-        <Home/>
+        <div>
+        <BrowserRouter>
+          <Route exact path="/" component={Home} />
+          <Route path="/FormInput" component={FormInput} />
+          <Route path="/ListItems" component={ListItems} />
+          <Route path="/Contact" component={Contact} />
+          <Route path="/login" component={Login} />
+          </BrowserRouter>
+        </div>
       </div>
     )
-
   }
 }
 

@@ -1,7 +1,14 @@
 .bg {
-    background-image: url("https://www.freepik.com/blog/app/uploads/2020/01/2927262.jpg");
+    /* background-image: url("https://c8.alamy.com/comp/M9PX7G/small-shopping-cart-with-blank-price-tag-and-vintage-analog-film-camera-on-pastel-background-minimal-creative-concept-M9PX7G.jpg"); */
+    background-color: LightYellow;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     }
+
+.text {
+    justify-content: center;
+    align-items: center;
+
+}

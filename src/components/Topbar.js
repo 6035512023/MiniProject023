@@ -14,14 +14,14 @@ const Topbar = () =>{
     return(
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">PhotoDiary</Navbar.Brand>
+                <Navbar.Brand href="/">PickMe</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Diary</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/FormInput">From</Nav.Link>
+                    <Nav.Link href="/ListItems">Store</Nav.Link>
+                    <Nav.Link href="/Contact">Contact</Nav.Link>
                 </Nav>
                 <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                     <Button variant="outline-info" onClick={logout}>LOGOUT</Button>
                 </Form>
             </Navbar>
