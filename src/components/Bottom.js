@@ -12,10 +12,11 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import amber from '@material-ui/core/colors/purple';
 
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-
+const accent = amber[500]; 
 
 const Bottom = () =>{
 
@@ -25,7 +26,7 @@ const Bottom = () =>{
         <CssBaseline />
         <AppBar position="relative">
           <Toolbar>
-            <Typography variant="h4" color="Chocolate" noWrap>
+            <Typography variant="h4" color="accent" noWrap>
             Covid-19 News
             </Typography>
           </Toolbar>
