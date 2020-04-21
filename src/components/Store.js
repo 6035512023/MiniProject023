@@ -29,7 +29,7 @@ export default props => {
         <li>
         <div>
             <MDBRow >
-      <MDBCol md="3">
+      <MDBCol md="5">
         <MDBCard>
           <img
                 className="d-block w-100"
@@ -45,7 +45,7 @@ export default props => {
                         PRICE : {price} <br />
                         DETAIL: {detail} <br />
                         <br />
-                        .........................CONTACT..........................<br />
+                        ...............CONTACT................<br />
 
                         NAME: {nameUser} <br />
                         TELEPHONE : {telephone} <br />

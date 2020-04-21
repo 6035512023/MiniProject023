@@ -65,18 +65,13 @@ import Store from './Store';
         if (store && store.length) {
             return store.map((store, index) => {
                 return (
-
-                    <Store key={index} store={store}
-                    />
-
+                    <Store key={index} store={store}/>
                 )
             })
-
         }
+
         else {
-
             return <li>No store</li>
-
         }
     }
 
@@ -158,29 +153,29 @@ import Store from './Store';
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label htmlFor="imgUrl2">PRODUCT NAME</label>
+                                                <label htmlFor="product">PRODUCT NAME</label>
                                                 <input type="text"
-                                                    name="imgUrl2"
+                                                    name="product"
                                                     className="form-control"
-                                                    id="imgUrl2"
+                                                    id="product"
                                                     onChange={(e) => SetProductName(e.target.value)} 
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label htmlFor="imgUrl3">PRICE</label>
+                                                <label htmlFor="price">PRICE</label>
                                                 <input type="text"
-                                                    name="imgUrl3"
+                                                    name="price"
                                                     className="form-control"
-                                                    id="imgUrl3"
+                                                    id="price"
                                                     onChange={(e) => SetPrice(e.target.value)}  
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label htmlFor="strain">DETAIL</label>
+                                                <label htmlFor="detail">DETAIL</label>
                                                 <input type="text"
-                                                    name="strain"
+                                                    name="detail"
                                                     className="form-control"
-                                                    id="strain"
+                                                    id="detail"
                                                     onChange={(e) => SetDetail(e.target.value)} 
                                                 />
                                             </div>

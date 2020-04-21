@@ -51,9 +51,7 @@ const ListItems = props => {
       if (store && store.length) {
         return store.map((store, index) => {
           return (
-       
                 <Store store={store} index={index} />
-        
           )
         })
       }
