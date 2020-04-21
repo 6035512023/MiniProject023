@@ -19,7 +19,6 @@ const Topbar = () =>{
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/FormInput">From</Nav.Link>
                     <Nav.Link href="/ListItems">Store</Nav.Link>
-                    <Nav.Link href="/Contact">Contact</Nav.Link>
                 </Nav>
                 <Form inline>
                     <Button variant="outline-info" onClick={logout}>LOGOUT</Button>

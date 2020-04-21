@@ -59,7 +59,6 @@ class App extends Component{
           <Route exact path="/" component={Home} />
           <Route path="/FormInput" component={FormInput} />
           <Route path="/ListItems" component={ListItems} />
-          <Route path="/Contact" component={Contact} />
           <Route path="/login" component={Login} />
           </BrowserRouter>
         </div>

@@ -18,7 +18,7 @@ const ListItems = props => {
   
         console.log(snapshot);
   
-        let myAni = snapshot.docs.map(d => {
+        let myStore = snapshot.docs.map(d => {
   
           const { id, imgUrl1, productName, price, detail,  nameUser, telephone, facebook, line } = d.data()
           console.log(id, imgUrl1, productName, price, detail,  nameUser, telephone, facebook, line)
@@ -26,7 +26,7 @@ const ListItems = props => {
   
         })
   
-        setStore(myAni)
+        setStore(myStore)
   
       })
     }

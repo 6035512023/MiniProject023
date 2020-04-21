@@ -1,14 +1,11 @@
-.bg {
-    /* background-image: url("https://c8.alamy.com/comp/M9PX7G/small-shopping-cart-with-blank-price-tag-and-vintage-analog-film-camera-on-pastel-background-minimal-creative-concept-M9PX7G.jpg"); */
-    background-color: LightYellow;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
 
-.text {
+.center {
+        
+    background-color: blanchedalmond;
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
+        
+      }
 
-}
