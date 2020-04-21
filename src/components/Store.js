@@ -5,14 +5,12 @@ import { Button, ListGroup, Carousel } from 'react-bootstrap';
 import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
 import Modal from "react-bootstrap/Modal";
 import { firestore } from '../index'
-import Topbar from './Topbar';
+import './Store.css';
 
 export default props => {
 
    const { store } = props
     const { id, imgUrl1, productName, price, detail,  nameUser, telephone, facebook, line} = store
-
-   
     const [isOpen, setIsOpen] = useState(false);
 
     const showModal = () => {
@@ -29,8 +27,8 @@ export default props => {
     return (
         
         <li>
-            <div >
-            <MDBRow>
+        <div>
+            <MDBRow >
       <MDBCol md="3">
         <MDBCard>
           <img
@@ -65,7 +63,5 @@ export default props => {
             </div>
         </li>
     )
-
-
 }
 
