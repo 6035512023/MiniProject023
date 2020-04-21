@@ -15,6 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Topbar from './Topbar';
 
 
 const ListItems = props => {
@@ -112,6 +113,8 @@ const ListItems = props => {
     return (
   
       <div>
+        <Topbar />
+        <br />
         <ul>{renderStore()}</ul>
       </div>
   

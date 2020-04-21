@@ -44,7 +44,7 @@ import Store from './Store';
 
     const retriveData = () => {
 
-        firestore.collection("animalsLoss").onSnapshot(snapshot => {
+        firestore.collection("store").onSnapshot(snapshot => {
 
             console.log(snapshot);
 
@@ -222,7 +222,7 @@ import Store from './Store';
                                             </div>
                                         </form>
                                         <div className="text-center">
-                                            <Button color="primary" style={{ margin:20, padding: 10}} onClick={addStore}>EDIT</Button>
+                                            <Button color="primary" style={{ margin:20, padding: 10}} onClick={addStore}>ADD</Button>
                                         </div>
                                     </div>
 

@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, ListGroup, Carousel } from 'react-bootstrap';
-import { MDBRow, MDBCol, MDBIcon, MDBBtn, MDBContainer, MDBCard, MDBCardBody, MDBView, MDBMask, MDBModal, MDBModalHeader, MDBModalFooter, MDBModalBody } from "mdbreact";
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
 import Modal from "react-bootstrap/Modal";
 import { firestore } from '../index'
+import Topbar from './Topbar';
 
 export default props => {
 
@@ -26,42 +27,40 @@ export default props => {
     const handleShow = () => setShow(true);
     
     return (
+        
         <li>
-            <div>
-                <MDBCard className="my-5 px-5"  style={{ backgroundColor: 'white'}}>
-                    <MDBCardBody >
-                        <MDBRow >
-                            <MDBCol lg="5">
-                                <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-                                    <Carousel>
-                                        <Carousel.Item>
-                                            <img
-                                                className="d-block w-100"
-                                                src={imgUrl1}
-                                                style={{ height: 280, width: 330 }}
-                                            />
-                                        </Carousel.Item>
-                                    </Carousel>
-                                    <MDBMask overlay="white-slight" />
-                                </MDBView>
-                            </MDBCol>
-                            <MDBCol lg="7">
-                                <h3 className="font-weight-bold mb-1 p-0">
-                                    <strong>
-                                        PRODUCT : {productName} <br />
-                                        PRICE : {price} <br />
-                                        DETAIL: {detail} <br />
-                                        ....................CONTACT.................... <br />
-                                        NAME: {nameUser} <br />
-                                        TELEPHONE : {telephone} <br />
-                                        FACEBOOK : {facebook} <br />
-                                        LINE : {line} <br />
-                                    </strong>
-                                </h3>
-                            </MDBCol>
-                        </MDBRow>
-                    </MDBCardBody>
-                </MDBCard>
+            <div >
+            <MDBRow>
+      <MDBCol md="3">
+        <MDBCard>
+          <img
+                className="d-block w-100"
+                src={imgUrl1}
+                style={{ height: 250, width: 330 }}
+            />
+          <MDBCardBody className='elegant-color white-text rounded-bottom'>
+           
+            <MDBCardText>
+                <h3 className="white-text font-weight-light mb-1 p-0">
+                    <strong>
+                        PRODUCT : {productName} <br />
+                        PRICE : {price} <br />
+                        DETAIL: {detail} <br />
+                        <br />
+                        .........................CONTACT..........................<br />
+
+                        NAME: {nameUser} <br />
+                        TELEPHONE : {telephone} <br />
+                        FACEBOOK : {facebook} <br />
+                        LINE : {line} <br />
+                    </strong>
+                </h3>
+            </MDBCardText>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+    </MDBRow>
+    <br />
                 
             </div>
         </li>

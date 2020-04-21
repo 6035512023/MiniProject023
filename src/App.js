@@ -8,14 +8,12 @@ import fire from './config/fire';
 import { BrowserRouter, Route, Link, Router, Redirect } from 'react-router-dom';
 // import VideoBackgroundPage from './components/VideoBackgroundPage';
 import Home from './components/Home';
-// import { Route } from 'react-router-dom';
 import Topbar from './components/Topbar';
 import Contact from './components/Contact';
 import FormInput from './components/FormInput';
 import { ListItem } from '@material-ui/core';
 import ListItems from './components/ListItems'
-// import Store from './components/Store'
-// import './index.css'
+
 
 class App extends Component{
   constructor(props){
