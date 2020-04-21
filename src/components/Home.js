@@ -1,6 +1,6 @@
 import React from 'react'
- import fire from '../config/fire'
- import Topbar from './Topbar';
+import fire from '../config/fire'
+import Topbar from './Topbar';
 import './Home.css';
 import { Carousel, Card } from 'react-bootstrap';
 import Bottom from './Bottom';

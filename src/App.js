@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import FormInput from './components/FormInput';
 import { ListItem } from '@material-ui/core';
 import ListItems from './components/ListItems'
+// import Store from './components/Store'
 // import './index.css'
 
 class App extends Component{
