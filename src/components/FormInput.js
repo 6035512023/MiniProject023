@@ -88,148 +88,110 @@ import Store from './Store';
         if (activeTab !== tab) setActiveTab(tab);
     }
 
-    const useStyles = makeStyles((theme) => ({
-        icon: {
-          marginRight: theme.spacing(2),
-        },
-        heroContent: {
-          backgroundColor: theme.palette.background.paper,
-          padding: theme.spacing(8, 0, 6),
-        },
-        heroButtons: {
-          marginTop: theme.spacing(4),
-        },
-        cardGrid: {
-          paddingTop: theme.spacing(8),
-          paddingBottom: theme.spacing(8),
-        },
-        card: {
-          height: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-        },
-        cardMedia: {
-          paddingTop: '56.25%', // 16:9
-        },
-        cardContent: {
-          flexGrow: 1,
-        },
-        footer: {
-          backgroundColor: theme.palette.background.paper,
-          padding: theme.spacing(6),
-        },
-      }));
-      
-      
-      
-      const classes = useStyles();
-
-
-        return (
-            <div>
-                <Topbar />
-                <MDBNavbar color="cyan" dark expand="md">
-                    <MDBNavbarBrand>
-                        <strong className="white-text">กรอกข้อมูลสินค้า</strong>
-                    </MDBNavbarBrand>
-                </MDBNavbar>
+    return (
+        <div>
+        <Topbar />
+        <MDBNavbar color="cyan" dark expand="md">
+            <MDBNavbarBrand>
+                <strong className="white-text">กรอกข้อมูลสินค้า</strong>
+            </MDBNavbarBrand>
+        </MDBNavbar>
                 
-            <TabContent activeTab={activeTab}>
-                <TabPane tabId="1">
-                    <Row>
-                        <Col sm="12">
+        <TabContent activeTab={activeTab}>
+            <TabPane tabId="1">
+                <Row>
+                    <Col sm="12">
+                        <div>
                             <div>
-                                <div>
-                                    <div className="col-6 mt-5 mx-auto card">
-                                    
-                                        <form>
-                                            <div className="form-group">
-                                                <label htmlFor="imgUrl1">Image 1 : รูปภาพ</label>
+                                <div className="col-6 mt-5 mx-auto card">
+                                    <form>
+                                        <div className="form-group">
+                                            <label htmlFor="imgUrl1">Image 1 : รูปภาพ</label>
                                                 <input type="text"
                                                     name="imgUrl1"
                                                     className="form-control"
                                                     id="imgUrl1"
                                                     onChange={(e) => SetImgUrl1(e.target.value)} 
                                                 />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="product">PRODUCT NAME</label>
-                                                <input type="text"
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="product">PRODUCT NAME</label>
+                                            <input type="text"
                                                     name="product"
                                                     className="form-control"
                                                     id="product"
                                                     onChange={(e) => SetProductName(e.target.value)} 
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="price">PRICE</label>
-                                                <input type="text"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="price">PRICE</label>
+                                            <input type="text"
                                                     name="price"
                                                     className="form-control"
                                                     id="price"
                                                     onChange={(e) => SetPrice(e.target.value)}  
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="detail">DETAIL</label>
-                                                <input type="text"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="detail">DETAIL</label>
+                                            <input type="text"
                                                     name="detail"
                                                     className="form-control"
                                                     id="detail"
                                                     onChange={(e) => SetDetail(e.target.value)} 
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="nameUser">USER NAME</label>
-                                                <input type="text"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="nameUser">USER NAME</label>
+                                            <input type="text"
                                                     name="nameUser"
                                                     className="form-control"
                                                     id="nameUser"
                                                     onChange={(e) => setNameUser(e.target.value)}  
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="telephone">Telephone</label>
-                                                <input type="text"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="telephone">Telephone</label>
+                                            <input type="text"
                                                     name="telephone"
                                                     className="form-control"
                                                     id="telephone"
                                                     onChange={(e) => setTelephone(e.target.value)} 
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <label htmlFor="facebook">Facebook</label>
-                                                <input type="text"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="facebook">Facebook</label>
+                                            <input type="text"
                                                     name="facebook"
                                                     className="form-control"
                                                     id="facebook"
                                                     onChange={(e) => setFacebook(e.target.value)}  
-                                                />
-                                            </div>
-                                            <div className="form-group">
+                                            />
+                                        </div>
+                                        <div className="form-group">
                                                 <label htmlFor="line">Line</label>
                                                 <input type="text"
                                                     name="line"
                                                     className="form-control"
                                                     id="line"
                                                     onChange={(e) => setLine(e.target.value)} 
-                                            />
-                                            </div>
-                                        </form>
-                                        <div className="text-center">
-                                            <Button color="primary" style={{ margin:20, padding: 10}} onClick={addStore}>ADD</Button>
+                                        />
                                         </div>
+                                    </form>
+                                    <div className="text-center">
+                                        <Button color="primary" style={{ margin:20, padding: 10}} onClick={addStore}>ADD</Button>
                                     </div>
-
                                 </div>
+
                             </div>
-                        </Col>
-                    </Row>
-                </TabPane>
-            </TabContent>    
+                        </div>
+                    </Col>
+                </Row>
+            </TabPane>
+        </TabContent>    
                 
-            </div>
-        );
-    }
+        </div>
+    );
+}
 
 export default FormInput;
