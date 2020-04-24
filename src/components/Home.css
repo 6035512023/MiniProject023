@@ -1,6 +1,6 @@
 .back1{
-  background-image: url("https://www.allbusiness.com/asset/2018/07/online-shopping-concept.jpg");
-  height: 250vh;
+  background-image: url("https://img.freepik.com/free-vector/online-shopping-with-laptop-smartphone-technology_24877-56046.jpg?size=626&ext=jpg");
+  height: 300vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,8 +18,18 @@
 .photobox {
   padding-top: 30px;
   justify-content: center;
+  align-items: center;
     padding-bottom: 20px;
 }
 .row1{
+  padding-top: 30px;
   justify-content: center;
+}
+
+.boxcolor{
+  background-color: rgba(255, 255, 255, 0.89);
+  justify-content: center;
+  height: 23vh;
+  text-align: center;
+  
 }

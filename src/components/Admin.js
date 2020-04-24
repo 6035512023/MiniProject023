@@ -4,31 +4,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardUp, MDBAvatar, MDBCardBod
 const Admin = () => {
   return (
       <div className="container">
-         
-      <section className="text-center my-5">
-        
-          <h2 className="h1-responsive font-weight-bold my-5">
-          PickMe
-        </h2>
-        <p className="orange-text w-responsive mx-auto mb-5">
-        เนื่องด้วยสถานการณ์ Covid-19 ทำให้ธุรกิจต่างๆต้องหยุดชั่วคราวหรือ
-        ปรับรูปแบบการทำงาน จึงเป็นผลให้ผู้คนต้องหยุดอยู่บ้าน ซึ่งในส่วนนี้มี
-        หลายคนเปิดร้านขายของออนไลน์กันมากขึ้น ไม่ว่าจะเป็นเครื่องใช้ต่างๆ 
-        เครื่องออกกำลังกาย รวมไปถึง อาหารต่างๆ แต่ไม่มีพื้นที่ในการโฆษณา
-        สินค้าของตัวเอง ทางผู้จัดทำจึงเขียนเว็บนี้ขึ้นมาเพื่อเป็นตัวช่วยในการโฆษณา
-        อีกหนึ่งทาง หากมีส่วนไหนที่ต้องปรับปรุงแก้ไข เราจะรับฟังและนำไปแก้ไข
-        ขอบคุณครับ
-
-        </p>
-        <br />
-        <p className="orange-text w-responsive mx-auto mb-5">
-        หากท่านกรอกข้อมูลผิดพลาด หรือมีปัญหาในการใช้งานอื่นๆในเว็บของเรา 
-        ผู้ใช้สามารถใช้ข้อมูลการติดต่อด้านล่าง ติดต่อเราเพื่อแก้ไขข้อมูลหรือปัญหา
-        การใช้งานของท่านได้
-        </p>
-        
-        
-        
+      <section className="text-center ">
           <div className="rowrow">
           <MDBContainer style={{display: 'flex' , justifyContent: 'center'}}>
 

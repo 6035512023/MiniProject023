@@ -94,7 +94,7 @@ import './FromInput.css'
             <Topbar />
             <MDBNavbar color="cyan" dark expand="md">
                 <MDBNavbarBrand>
-                    <strong className="white-text">กรอกข้อมูลสินค้า</strong>
+                    <strong className="black-text">กรอกข้อมูลสินค้า</strong>
                 </MDBNavbarBrand>
             </MDBNavbar>
             <div className="cc">
@@ -109,7 +109,7 @@ import './FromInput.css'
                                 <div className="col-6 mt-5 mx-auto card">
                                     <form>
                                         <div className="form-group">
-                                            <label htmlFor="imgUrl1">PRODUCT IMAGE : รูปภาพสินค้า</label>
+                                            <label htmlFor="imgUrl1">URL IMAGE : ใส่ลิงค์รูปภาพของสินค้า</label>
                                                 <input type="text"
                                                     name="imgUrl1"
                                                     className="form-control"
