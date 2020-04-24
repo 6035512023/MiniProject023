@@ -6,11 +6,11 @@ const Admin = () => {
       <div className="container">
          
       <section className="text-center my-5">
-        <div >
+        
           <h2 className="h1-responsive font-weight-bold my-5">
           PickMe
         </h2>
-        <p className="dark-grey-text w-responsive mx-auto mb-5">
+        <p className="orange-text w-responsive mx-auto mb-5">
         เนื่องด้วยสถานการณ์ Covid-19 ทำให้ธุรกิจต่างๆต้องหยุดชั่วคราวหรือ
         ปรับรูปแบบการทำงาน จึงเป็นผลให้ผู้คนต้องหยุดอยู่บ้าน ซึ่งในส่วนนี้มี
         หลายคนเปิดร้านขายของออนไลน์กันมากขึ้น ไม่ว่าจะเป็นเครื่องใช้ต่างๆ 
@@ -21,12 +21,12 @@ const Admin = () => {
 
         </p>
         <br />
-        <p className="dark-grey-text w-responsive mx-auto mb-5">
+        <p className="orange-text w-responsive mx-auto mb-5">
         หากท่านกรอกข้อมูลผิดพลาด หรือมีปัญหาในการใช้งานอื่นๆในเว็บของเรา 
         ผู้ใช้สามารถใช้ข้อมูลการติดต่อด้านล่าง ติดต่อเราเพื่อแก้ไขข้อมูลหรือปัญหา
         การใช้งานของท่านได้
         </p>
-        </div>
+        
         
         
           <div className="rowrow">
