@@ -15,7 +15,7 @@ const Home = () => {
      }
 
     return(
-    <div>
+    <div className="back1">
              
              
                 <Topbar />

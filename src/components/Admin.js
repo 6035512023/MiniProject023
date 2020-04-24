@@ -4,10 +4,11 @@ import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardUp, MDBAvatar, MDBCardBod
 const Admin = () => {
   return (
       <div className="container">
-          
+         
       <section className="text-center my-5">
-        <h2 className="h1-responsive font-weight-bold my-5">
-          PickM
+        <div >
+          <h2 className="h1-responsive font-weight-bold my-5">
+          PickMe
         </h2>
         <p className="dark-grey-text w-responsive mx-auto mb-5">
         เนื่องด้วยสถานการณ์ Covid-19 ทำให้ธุรกิจต่างๆต้องหยุดชั่วคราวหรือ
@@ -25,8 +26,12 @@ const Admin = () => {
         ผู้ใช้สามารถใช้ข้อมูลการติดต่อด้านล่าง ติดต่อเราเพื่อแก้ไขข้อมูลหรือปัญหา
         การใช้งานของท่านได้
         </p>
+        </div>
+        
         
           <div className="rowrow">
+          <MDBContainer style={{display: 'flex' , justifyContent: 'center'}}>
+
               <MDBCol lg="4" md="6" className="mb-lg-0 mb-4">
             <MDBCard testimonial>
                 <img
@@ -55,6 +60,7 @@ const Admin = () => {
                     </MDBCardBody>
                 </MDBCard>
             </MDBCol>
+            </MDBContainer>
           </div>
       </section>
     
