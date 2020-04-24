@@ -27,9 +27,9 @@ export default props => {
     return (
         
         <li>
-        <div>
+        <div className="Container">
             <MDBRow >
-      <MDBCol md="3">
+      <MDBCol md="12">
         <MDBCard>
           <img
                 className="d-block w-100"

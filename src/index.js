@@ -9,6 +9,7 @@ import {render} from 'react-dom';
 import config from './components/config';
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+
 // ReactDOM.render(<App />, document.getElementById('root'));
 // import { Form } from 'react-bootstrap';
 
@@ -16,6 +17,7 @@ if( firebase.apps.length === 0)
     firebase.initializeApp(config)
 
 export const firestore = firebase.firestore()
+
 render (
     <BrowserRouter>
         <App/>

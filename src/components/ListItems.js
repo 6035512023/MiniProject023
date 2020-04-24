@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Topbar from './Topbar';
 
 
+
 const ListItems = props => {
 
 
@@ -39,7 +40,10 @@ const ListItems = props => {
       if (store && store.length) {
         return store.map((store, index) => {
           return (
+          
                 <Store store={store} index={index} />
+              
+                
           )
         })
       }
@@ -65,7 +69,7 @@ const ListItems = props => {
   
     return (
   
-      <div>
+      <div className="bg">
         <Topbar />
         <br />
         <ul>{renderStore()}</ul>

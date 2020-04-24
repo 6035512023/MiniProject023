@@ -9,3 +9,11 @@
         
       }
 
+.photobox {
+  padding-top: 30px;
+  justify-content: center;
+    padding-bottom: 20px;
+}
+.row1{
+  justify-content: center;
+}

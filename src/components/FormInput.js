@@ -21,6 +21,7 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Topbar from './Topbar';
 import Store from './Store';
+import './FromInput.css'
 
 
  const FormInput = props => {
@@ -90,14 +91,16 @@ import Store from './Store';
 
     return (
         <div>
-        <Topbar />
-        <MDBNavbar color="cyan" dark expand="md">
-            <MDBNavbarBrand>
-                <strong className="white-text">กรอกข้อมูลสินค้า</strong>
-            </MDBNavbarBrand>
-        </MDBNavbar>
-                
-        <TabContent activeTab={activeTab}>
+            <Topbar />
+            <MDBNavbar color="cyan" dark expand="md">
+                <MDBNavbarBrand>
+                    <strong className="white-text">กรอกข้อมูลสินค้า</strong>
+                </MDBNavbarBrand>
+            </MDBNavbar>
+            <div className="cc">
+            
+            <div>
+            <TabContent activeTab={activeTab}>
             <TabPane tabId="1">
                 <Row>
                     <Col sm="12">
@@ -106,7 +109,7 @@ import Store from './Store';
                                 <div className="col-6 mt-5 mx-auto card">
                                     <form>
                                         <div className="form-group">
-                                            <label htmlFor="imgUrl1">Image 1 : รูปภาพ</label>
+                                            <label htmlFor="imgUrl1">PRODUCT IMAGE : รูปภาพสินค้า</label>
                                                 <input type="text"
                                                     name="imgUrl1"
                                                     className="form-control"
@@ -115,7 +118,7 @@ import Store from './Store';
                                                 />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="product">PRODUCT NAME</label>
+                                            <label htmlFor="product">PRODUCT NAME : ชื่อสินค้า</label>
                                             <input type="text"
                                                     name="product"
                                                     className="form-control"
@@ -124,7 +127,7 @@ import Store from './Store';
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="price">PRICE</label>
+                                            <label htmlFor="price">PRICE : ราคา</label>
                                             <input type="text"
                                                     name="price"
                                                     className="form-control"
@@ -133,7 +136,7 @@ import Store from './Store';
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="detail">DETAIL</label>
+                                            <label htmlFor="detail">DETAIL : รายละเอียด</label>
                                             <input type="text"
                                                     name="detail"
                                                     className="form-control"
@@ -142,7 +145,7 @@ import Store from './Store';
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="nameUser">USER NAME</label>
+                                            <label htmlFor="nameUser">USER NAME : ชื่อผู้ขายสินค้า</label>
                                             <input type="text"
                                                     name="nameUser"
                                                     className="form-control"
@@ -151,7 +154,7 @@ import Store from './Store';
                                             />
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="telephone">Telephone</label>
+                                            <label htmlFor="telephone">Telephone : เบอร์โทรติดต่อ</label>
                                             <input type="text"
                                                     name="telephone"
                                                     className="form-control"
@@ -188,9 +191,13 @@ import Store from './Store';
                     </Col>
                 </Row>
             </TabPane>
-        </TabContent>    
+        </TabContent>
+            </div>        
+            
                 
         </div>
+        </div>
+        
     );
 }
 

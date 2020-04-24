@@ -2,3 +2,18 @@
     display: flex;
     justify-content: center;
   }
+
+.Container{
+
+  display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.bg{
+  background-image: url("https://majaid.com/wp-content/uploads/shopping-cart-1080x675.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
