@@ -26,42 +26,42 @@ export default props => {
     
     return (
         
-        <li>
+        
         <div className="Container">
-            <MDBRow >
-      <MDBCol md="12">
-        <MDBCard>
-          <img
-                className="d-block w-100"
-                src={imgUrl1}
-                style={{ height: 250, width: 330 }}
-            />
-          <MDBCardBody className='elegant-color white-text rounded-bottom'>
-           
-            <MDBCardText>
-                <h3 className="white-text font-weight-light mb-1 p-0">
-                    <strong>
-                        PRODUCT : {productName} <br />
-                        PRICE : {price} <br />
-                        DETAIL: {detail} <br />
-                        <br />
-                        .......................CONTACT.......................<br />
+          <div className="FOTO">
+              <MDBRow >
+                    <MDBCol md="12">
+                      <MDBCard>
+                        <img
+                              className="d-block w-100"
+                              src={imgUrl1}
+                              style={{ height: 250, width: 330 }}
+                          />
+                        <MDBCardBody className='elegant-color white-text rounded-bottom'>
+                        
+                          <MDBCardText>
+                              <h3 className="white-text font-weight-light mb-1 p-0">
+                                  <strong>
+                                      PRODUCT : {productName} <br />
+                                      PRICE : {price} <br />
+                                      DETAIL: {detail} <br />
+                                      <br />
+                                      .......................CONTACT.......................<br />
 
-                        NAME: {nameUser} <br />
-                        TELEPHONE : {telephone} <br />
-                        FACEBOOK : {facebook} <br />
-                        LINE : {line} <br />
-                    </strong>
-                </h3>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-    </MDBRow>
-    <br />
-                
-            </div>
-        </li>
+                                      NAME: {nameUser} <br />
+                                      TELEPHONE : {telephone} <br />
+                                      FACEBOOK : {facebook} <br />
+                                      LINE : {line} <br />
+                                  </strong>
+                              </h3>
+                          </MDBCardText>
+                        </MDBCardBody>
+                      </MDBCard>
+                    </MDBCol>
+                  </MDBRow>
+          </div>     
+        </div>
+        
     )
 }
 

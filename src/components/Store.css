@@ -4,15 +4,19 @@
   }
 
 .Container{
-
-  display: flex;
+    
+    display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+
+}
+.FOTO{
+  width: 450px;
 }
 
 .bg{
   background-image: url("https://img.freepik.com/free-vector/online-shopping-with-laptop-smartphone-technology_24877-56046.jpg?size=626&ext=jpg");
-  height: 150vh;
+  height: 1000vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
