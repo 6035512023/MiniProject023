@@ -1,6 +1,6 @@
 .back1{
   background-image: url("https://img.freepik.com/free-vector/online-shopping-with-laptop-smartphone-technology_24877-56046.jpg?size=626&ext=jpg");
-  height: 300vh;
+  height: 350vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +39,5 @@
   text-align: center;
   height: 350px;
   width: 810px;
-  
-  
+
 }
